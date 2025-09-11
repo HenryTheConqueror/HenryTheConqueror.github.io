@@ -2,62 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Henry Jnr's Profile</title>
+    <title>Henry Jnr's Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link href="dashboardnl.html">
+    <link href="contact.html">
+    <script src="bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css"><!-- Font Awesome -->
+    <link href="blog.html">
+    <link  href="dashboard.html">
+    <link  href="faq.html">
+    <link  href="profile.html">
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="profile.html">Profile</a>
-        <a href="blog.html">Blog</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="faq.html">FAQ</a>
 
-        <div class="dropdown">Lang:EN🇬🇧
+
+
+     
+
+
+
+<!-- Hamburger button to open sidebar -->
+<button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
+
+
+<!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i class="fa-solid fa-xmark"></i></button></li>
+            <li class="home-li"><a class="active" href="index.html">Home</a></li>
+            <li class="blog-li"><a href="blog.html">Blog</a></li>
+            <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
+            <li class="faq-li"><a href="faq.html">FAQ</a></li>
+
+            <li class="placeholder"><input type="text" placeholder="Search.."></li>
+
+            <li><div class="dropdown">Lang:EN🇬🇧
             <div class="dropdown-content">EN🇬🇧</div>
-            <div class="dropdown-content"><a href="profilenl.html">NL🇳🇱</a></div>
-        </div>
+            <div class="dropdown-content"><a href="dashboardnl.html">NL🇳🇱</a></div>
+            </div></li>
+
+        </ul>
+</nav>
+
+<div id="overlay" onclick="closeSidebar()"></div>
+<br>
 
 
-        <input type="text" placeholder="Search..">
-    </div>
+
+<!-- Sidebar -->
+<aside id="sidebar">
+    <ul class="sidebar-menu">
+
+
+        <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e"><span>HZ HBO-ICT CER</span></a></li>
+        <li><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer"><span>IR of the HBO-ICT program</span></a></li>
+        <li><a href="###"><span>Learn Environment</span></a></li>
+        <li><a href="###"><span>My Study Progress</span></a></li>
+        <li><a href="https://github.com/HZ-HBO-ICT"><span>HBO-ICT GitHub Page</span></a></li>
+        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf"><span>Facilities Regulations</span></a></li>
+        </aside>
+
+
  
 
 
 
     <!--Write here-->
+<main>
+<h2>Study Monitor – Year 1</h2>
+  <table>
+    <tr>
+      <th>Quarter</th>
+      <th>Course / Test Items</th>
+      <th>EC</th>
+      <th>Status</th>
+      <th>Grade</th>
+    </tr>
+
+    <!-- Q1 -->
+    <tr>
+      <td rowspan="3" class="quarter">Q1</td>
+      <td class="course-name">Programme & Career Orientation (CU75001V1)</td>
+      <td>2.5</td>
+      <td class="completed">Completed</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td class="course-name">Programming Basics (CU75002V1)</td>
+      <td>5</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td class="course-name">Computer Science Basics (CU75020V1)</td>
+      <td>5</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+
+    <!-- Q2 -->
+    <tr>
+      <td rowspan="2" class="quarter">Q2</td>
+      <td class="course-name">Object-Oriented Programming (CU75003V1)</td>
+      <td>10</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td class="course-name">Projectweek (CU75054V1)</td>
+      <td>1.25</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+
+    <!-- Q3 -->
+    <tr>
+      <td rowspan="1" class="quarter">Q3</td>
+      <td class="course-name">Framework Project 1 (CU75039V1)</td>
+      <td>10</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+    
+
+    <!-- Q4 -->
+    <tr>
+      <td class="quarter">Q4</td>
+      <td class="course-name">Framework Project 2 (CU75041V1)</td>
+      <td>10</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+
+<!-- Q3-4 -->
+    <tr>
+     <td class="quarter">Q3-4</td>
+    <td class="course-name">Business Understanding Basics (CU75035V1)</td>
+      <td>2.5</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
 
 
+    <!-- Full-year -->
+    <tr>
+      <td rowspan="2" class="quarter">Q1–Q4</td>
+     
+      <td class="course-name">Personal Proffessional Development:Exploration (CU75035V1)</td>
+      <td>12.5</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td class="course-name">IT Personality (CU75068V3)</td>
+      <td>2.5</td>
+      <td class="not-completed">Not Completed</td>
+      <td>-</td>
+    </tr>
 
+    <!-- Totals -->
+     <tr>
+      <td colspan="2" class="total">Obtained: 2.5 EC/62.5 EC</td>
+      <td class="total">Required: 60 EC</td>
+      <td colspan="2" class="total">NBSA: 45 EC</td>
+    </tr>
+    
+  </table>
+</main>
 
     <footer>
         <table width="100%">
             <tr valign="top">
                 <td width="25%">
                     <a href="https://hz.nl/en">
-                        <h2><img src="images/hz-logo.svg" alt="HZ Logo"></h2>
+                        <h4><img src="images/hz-logo.svg" alt="HZ Logo"></h4>
                 </td>
 
                 <td width="25%">
                     <h4>CONNECT WITH ME</h4>
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                                class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color:white; text-decoration:none;"></i></a>
                         <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                                class="fa-brands fa-x-twitter" style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
@@ -66,13 +201,13 @@
                 <td width="25%">
                     <h4>HENRY</h4>
                     <p>
-                        I kinda<br>
-                        Used<br>
+                        HTML<br>
+                        CSS<br>
                         Bootstrap<br>
-                        To do<br>
-                        The<br>
-                        Footer<br>
-                        Classes<br>
+                        JavaScript<br>
+                        Font Awesome<br>
+                        W3 Schools<br>
+                        Free Code Camp<br>
                         My Account
                     </p>
                 </td>

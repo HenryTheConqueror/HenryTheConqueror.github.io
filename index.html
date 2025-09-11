@@ -5,56 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Henry Jnr's Profile</title>
+    <title>Henry Jnr's Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link href="indexnl.html">
+    <link href="contact.html">
+    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css"><!-- Font Awesome -->
+    <script src="bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="blog.html">
+    <link href="dashboard.html">
+    <link href="faq.html">
+    <link href="profile.html">
+    <script src="script.js" defer></script>
+
 
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="profile.html">Profile</a>
-        <a href="blog.html">Blog</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="faq.html">FAQ</a>
 
-        <div class="dropdown">Lang:EN🇬🇧
-            <div class="dropdown-content">EN🇬🇧</div>
-            <div class="dropdown-content"><a href="profilenl.html">NL🇳🇱</a></div>
+
+
+
+    <!-- Hamburger button to open sidebar -->
+    <button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
+
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i
+                        class="fa-solid fa-xmark"></i></button></li>
+            <li class="home-li"><a class="active" href="index.html">Home</a></li>
+            <li class="blog-li"><a href="blog.html">Blog</a></li>
+            <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
+            <li class="faq-li"><a href="faq.html">FAQ</a></li>
+
+            <li class="placeholder"><input type="text" placeholder="Search.."></li>
+
+            <li>
+                <div class="dropdown">Lang:EN🇬🇧
+                    <div class="dropdown-content">EN🇬🇧</div>
+                    <div class="dropdown-content"><a href="indexnl.html">NL🇳🇱</a></div>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <br>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <ul class="sidebar-menu">
+
+            <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e"><span>HZ HBO-ICT CER</span></a></li>
+            <li><a
+                    href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer"><span>IR
+                        of the HBO-ICT program</span></a></li>
+            <li><a href="###"><span>Learn Environment</span></a></li>
+            <li><a href="###"><span>My Study Progress</span></a></li>
+            <li><a href="https://github.com/HZ-HBO-ICT"><span>HBO-ICT GitHub Page</span></a></li>
+            <li><a
+                    href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf"><span>Facilities
+                        Regulations</span></a></li>
+    </aside>
+
+    <main>
+        <div class="welcome">
+            <p>
+            <h1>Welcome To My Page</h1>
+            </p>
         </div>
 
+        <!-- Image with text beside it -->
+        <section class="intro">
+            <img src="images/hbo-ict.jpg" alt="HBO-ICT Image" class="intro-img">
+            <div class="intro-text">
+                <h1>Why I Chose HBO-ICT</h1>
+                <p>
+                    I chose HBO-ICT because of my passion for technology, problem-solving,
+                    and the role ICT plays in shaping the modern world. I believe this program
+                    will give me the right balance of theory and practical skills.
+                </p>
+                <p>
+                    The program emphasizes both software development and business insights,
+                    which is perfect for me since I want to build solutions that not only
+                    work but also create real-world impact.
+                </p>
+                <p>
+                    Studying HBO-ICT will also prepare me for international opportunities
+                    since ICT is a global field with endless applications across industries.
+                </p>
+            </div>
+        </section>
 
-        <input type="text" placeholder="Search..">
-    </div>
-    <div class="welcome">
+        <!-- Career prospects list -->
+        <section class="careers">
+            <h2>Career Prospects</h2>
+            <ul>
+                <li>Software Developer</li>
+                <li>IT Consultant</li>
+                <li>Business Analyst</li>
+                <li>Cybersecurity Specialist</li>
+                <li>Data Scientist</li>
+                <li>Project Manager in IT</li>
+            </ul>
+        </section>
 
-        <h1>Welcome To My Page</h1>
+        <!-- Links to profile and contact -->
+        <section class="links">
+            <h2>Explore More</h2>
+            <p>
+                <a href="profile.html" style="color: #000000;">My Profile</a> |
+                <a href="contact.html" style="color: #000000;">Contact Me</a>
+            </p>
+        </section>
+    </main>
 
-    </div>
 
     <footer>
         <table width="100%">
             <tr valign="top">
                 <td width="25%">
                     <a href="https://hz.nl/en">
-                        <h2><img src="images/hz-logo.svg" alt="HZ Logo"></h2>
+                        <h4><img src="images/hz-logo.svg" alt="HZ Logo"></h4>
                 </td>
 
                 <td width="25%">
                     <h4>CONNECT WITH ME</h4>
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                                class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                                style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.x.com/henryjr210" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
@@ -63,13 +149,13 @@
                 <td width="25%">
                     <h4>HENRY</h4>
                     <p>
-                        I kinda<br>
-                        Used<br>
+                        HTML<br>
+                        CSS<br>
                         Bootstrap<br>
-                        To do<br>
-                        The<br>
-                        Footer<br>
-                        Classes<br>
+                        JavaScript<br>
+                        Font Awesome<br>
+                        W3 Schools<br>
+                        Free Code Camp<br>
                         My Account
                     </p>
                 </td>

@@ -7,31 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Henry Jnr's Profile</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="all.min.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="indexnl.html">
+    <link href="contact.html">
+    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css"><!-- Font Awesome -->
+    <link href="blog.html">
+    <link  href="dashboard.html">
+    <script src="bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link  href="faq.html">
+    <link  href="profile.html">
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="profile.html">Profile</a>
-        <a href="blog.html">Blog</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="faq.html">FAQ</a>
+    <!-- Hamburger button to open sidebar -->
+<button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
 
-        <div class="dropdown">Lang:EN🇬🇧
+
+<!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i class="fa-solid fa-xmark"></i></button></li>
+            <li class="home-li"><a class="active" href="index.html">Home</a></li>
+            <li class="blog-li"><a href="blog.html">Blog</a></li>
+            <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
+            <li class="faq-li"><a href="faq.html">FAQ</a></li>
+
+            <li class="placeholder"><input type="text" placeholder="Search.."></li>
+
+            <li><div class="dropdown">Lang:EN🇬🇧
             <div class="dropdown-content">EN🇬🇧</div>
             <div class="dropdown-content"><a href="profilenl.html">NL🇳🇱</a></div>
-        </div>
+            </div></li>
+
+        </ul>
+</nav>
+
+<div id="overlay" onclick="closeSidebar()"></div>
+<br>
 
 
-        <input type="text" placeholder="Search..">
-    </div>
+
+
+        <main class="main">
+
     <div class="welcome">
         <h1>Welcome To My Page</h1>
         <div class="myself">
@@ -41,7 +61,7 @@
                 </legend>
                 <ul>
                     <h2>
-                        <li>Name: Henry Jnr</li>
+                        <li>Name: Henry Oduenyi</li>
                         <li>Age: 17</li>
                         <li>Location: Poelendaelesingel 6-40 4335JA Middelburg</li>
                         <li>Nationality: Dutch</li>
@@ -51,37 +71,52 @@
             <p></p>
         </div>
 
-        <main class="main">
-            <h1 class="swot">SWOT Analysis</h1>
+             <!-- Profile Card -->
+    <div style="max-width:800px; margin:50px auto; background-color:white; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1); padding:30px;">
 
-            <h2><i class="fa-solid fa-arrow-up"></i>Strengths</h2>
-            <ul>
-                <li>Curious and willing to learn</li>
-                <li>Strong interest in technology → ambitious and versatile</li>
-                <li>Multicultural background → adaptable in diverse environments</li>
-                <li>Determined to balance academics with personal passions</li>
-            </ul>
+        <!-- Profile Image -->
+        <img src="Screen Shot 2025-05-02 at 10.43.18 AM Small.jpeg" alt="Henry's Photo"
+            style="display:block; margin:0 auto 20px; width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #1a1a1a;">
 
-            <h2><i class="fa-solid fa-arrow-down"></i>Weaknesses</h2>
-            <ul>
-                <li>Limited formal experience in computer science and professional football</li>
-                <li>Can get overwhelmed by wanting to master many things at once</li>
-                <li>Sometimes impatient with slow progress</li>
-                <li>Relatively new to navigating student systems</li>
-            </ul>
+        <!-- Name -->
+        <h1 style="text-align:center; margin-bottom:20px;">Henry Oduenyi Jnr</h1>
 
-            <h2><i class="fa-solid fa-clover"></i></i>Opportunities</h2>
-            <ul>
-                <li>Studying in the Netherlands provides access to world-class education</li>
-                <li>Growing demand for AI, software engineers, and data scientists</li>
-                <li>Networking with international students and mentors</li>
-            </ul>
+        <!-- Description Paragraphs -->
+        <p style="line-height:1.6; margin-bottom:15px; color:#333;">
+            I am a passionate learner and aspiring software developer with a strong interest in front-end and back-end technologies. I enjoy solving real-world problems with code and continuously improving my skills in programming and technology.
+        </p>
 
-            <h2><i class="fa-solid fa-triangle-exclamation"></i>Threats</h2>
-            <ul>
-                <li>High competition in tech fields</li>
-                <li>Fast-changing tech industry</li>
-            </ul>
+        <p style="line-height:1.6; margin-bottom:15px; color:#333;">
+            Beyond coding, I love exploring creative solutions, learning new frameworks, and collaborating with others on exciting projects. I believe in growth through both challenges and curiosity.
+        </p>
+
+        <!-- Hobbies / Interests -->
+        <h3>Hobbies & Interests</h3>
+        <ul style="list-style:none; padding:0;">
+            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                <i class="fa-solid fa-code" style="color:#f39c12;"></i> Coding & Problem Solving
+            </li>
+            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                <i class="fa-solid fa-football" style="color:#f39c12;"></i> Football
+            </li>
+            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                <i class="fa-solid fa-music" style="color:#f39c12;"></i> Music Production & Listening
+            </li>
+            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                <i class="fa-solid fa-book" style="color:#f39c12;"></i> Reading Tech Blogs & Books
+            </li>
+            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                <i class="fa-solid fa-plane" style="color:#f39c12;"></i> Traveling & Exploring
+            </li>
+        </ul>
+
+        <!-- Contact Button -->
+        <a href="contact.html"
+            style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#1a1a1a; color:white; text-decoration:none; border-radius:8px; transition:0.3s;">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+        </a>
+
+    </div>
         </main>
     </div>
 
@@ -90,17 +125,17 @@
             <tr valign="top">
                 <td width="25%">
                     <a href="https://hz.nl/en">
-                        <h2><img src="images/hz-logo.svg" alt="HZ Logo"></h2>
+                        <h4><img src="images/hz-logo.svg" alt="HZ Logo"></h4>
                 </td>
 
                 <td width="25%">
                     <h4>CONNECT WITH ME</h4>
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                                class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color:white; text-decoration:none;"></i></a>
                         <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                                class="fa-brands fa-x-twitter" style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
@@ -109,13 +144,13 @@
                 <td width="25%">
                     <h4>HENRY</h4>
                     <p>
-                        I kinda<br>
-                        Used<br>
+                        HTML<br>
+                        CSS<br>
                         Bootstrap<br>
-                        To do<br>
-                        The<br>
-                        Footer<br>
-                        Classes<br>
+                        JavaScript<br>
+                        Font Awesome<br>
+                        W3 Schools<br>
+                        Free Code Camp<br>
                         My Account
                     </p>
                 </td>
@@ -145,6 +180,13 @@
         </p>
     </footer>
 
+</body>
+
+</html>
+
+</body>
+
+</html>
 
 </body>
 
