@@ -10,20 +10,18 @@
     <link href="blognl.html">
     <link href="contact.html">
     <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css"><!-- Font Awesome -->
-    <script src="bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css">
     <link href="blog.html">
-    <link  href="dashboard.html">
-    <link  href="faq.html">
-    <link  href="profile.html">
+    <link href="dashboard.html">
+    <link href="faq.html">
+    <link href="profile.html">
     <script src="script.js" defer></script>
 
 
-<style>
-    a:visited {
-        color: black;
-    }
-</style>
+    <style>
+        a:visited {
+            color: black;
+        }
+    </style>
 
 
 
@@ -31,14 +29,15 @@
 </head>
 
 <body>
-<!-- Hamburger button to open sidebar -->
-<button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
+    <!-- Hamburger button to open sidebar -->
+    <button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
 
 
-<!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav id="navbar">
         <ul>
-            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i class="fa-solid fa-xmark"></i></button></li>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i
+                        class="fa-solid fa-xmark"></i></button></li>
             <li class="home-li"><a class="active" href="index.html">Home</a></li>
             <li class="blog-li"><a href="blog.html">Blog</a></li>
             <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
@@ -46,88 +45,107 @@
 
             <li class="placeholder"><input type="text" placeholder="Search.."></li>
 
-            <li><div class="dropdown">Lang:EN🇬🇧
-            <div class="dropdown-content">EN🇬🇧</div>
-            <div class="dropdown-content"><a href="blognl.html">NL🇳🇱</a></div>
-            </div></li>
+            <li>
+                <div class="dropdown">Lang:EN🇬🇧
+                    <div class="dropdown-content">EN🇬🇧</div>
+                    <div class="dropdown-content"><a href="blognl.html">NL🇳🇱</a></div>
+                </div>
+            </li>
 
         </ul>
-</nav>
+    </nav>
 
-<div id="overlay" onclick="closeSidebar()"></div>
-<br>
-    
-
-<!-- Sidebar -->
-<aside id="sidebar">
-    <ul class="sidebar-menu">
-
-        <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e" style="color: #ffffff;"><span>HZ HBO-ICT CER</span></a></li>
-        <li><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer" style="color: #ffffff;"><span>IR of the HBO-ICT program</span></a></li>
-        <li><a href="###" style="color: #ffffff;"><span>Learn Environment</span></a></li>
-        <li><a href="###" style="color: #ffffff;"><span>My Study Progress</span></a></li>
-        <li><a href="https://github.com/HZ-HBO-ICT" style="color: #ffffff;"><span>HBO-ICT GitHub Page</span></a></li>
-        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf" style="color: #ffffff;"><span>Facilities Regulations</span></a></li>
-        </aside>
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <br>
 
 
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <ul class="sidebar-menu">
+            <li></li>
+            <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e" style="color: #ffffff;"><span>HZ
+                        HBO-ICT CER</span></a></li>
+            <li><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer"
+                    style="color: #ffffff;"><span>IR of the HBO-ICT program</span></a></li>
+            <li><a href="###" style="color: #ffffff;"><span>Learn Environment</span></a></li>
+            <li><a href="###" style="color: #ffffff;"><span>My Study Progress</span></a></li>
+            <li><a href="https://github.com/HZ-HBO-ICT" style="color: #ffffff;"><span>HBO-ICT GitHub Page</span></a>
+            </li>
+            <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf"
+                    style="color: #ffffff;"><span>Facilities Regulations</span></a></li>
+    </aside>
 
 
-<!-- WRITE HERE -->
- <main>
-<div class="container">
 
-    <!-- Text-only article -->
-    <div class="text-article">
-        <h2><a href="swot.html">SWOT Analysis</a></h2>
-        <a class="url" href="swot.html">henryblog.com/swot</a>
-        <p class="snippet">Curious and willing to learn, I explore technology with ambition. Studying in the Netherlands opens opportunities in AI, software engineering, and networking. Despite limited formal experience, I am determined to grow. Challenges include fast-changing tech and high competition...</p>
-    </div>
 
-    <!-- Text-only article -->
-    <div class="text-article">
-        <h2><a href="skc-activity.html">SKC Activity</a></h2>
-        <a class="url" href="skc-activity.html">henryblog.com/skc-activity</a>
-        <p class="snippet">During orientation, I connected with an HZ student and learned about student life, opportunities, and preparation for university. The conversation gave insight into the supportive community at HZ and motivated me to stay focused on my goals and personal growth...</p>
-    </div>
+    <!-- WRITE HERE -->
+    <main>
+        <div class="container">
 
-    <!-- Image card article -->
-    <div class="card-article">
-        <img src="ict.png" alt="AI and ICT">
-        <div class="card-article-content">
-            <h2><a href="article-ict.html">How Artificial Intelligence is Transforming ICT</a></h2>
-            <p class="snippet">ICT is evolving as AI integrates into everyday systems—from chatbots to machine learning for better decisions. Education adapts to individual learners, industries gain efficiency, and communication improves worldwide. AI-powered ICT emphasizes ethical, practical, and human-centered technology...</p>
-            <a class="read-more" href="article-ict.html">Read More</a>
+            <!-- Text-only article -->
+            <div class="text-article">
+                <h2><a href="swot.html">SWOT Analysis</a></h2>
+                <a class="url" href="swot.html">henryblog.com/swot</a>
+                <p class="snippet">Curious and willing to learn, I explore technology with ambition. Studying in the
+                    Netherlands opens opportunities in AI, software engineering, and networking. Despite limited formal
+                    experience, I am determined to grow. Challenges include fast-changing tech and high competition...
+                </p>
+            </div>
+
+            <!-- Text-only article -->
+            <div class="text-article">
+                <h2><a href="skc-activity.html">SKC Activity</a></h2>
+                <a class="url" href="skc-activity.html">henryblog.com/skc-activity</a>
+                <p class="snippet">During orientation, I connected with an HZ student and learned about student life,
+                    opportunities, and preparation for university. The conversation gave insight into the supportive
+                    community at HZ and motivated me to stay focused on my goals and personal growth...</p>
+            </div>
+
+            <!-- Image card article -->
+            <div class="card-article">
+                <img src="ict.png" alt="AI and ICT">
+                <div class="card-article-content">
+                    <h2><a href="article-ict.html">How Artificial Intelligence is Transforming ICT</a></h2>
+                    <p class="snippet">ICT is evolving as AI integrates into everyday systems—from chatbots to machine
+                        learning for better decisions. Education adapts to individual learners, industries gain
+                        efficiency, and communication improves worldwide. AI-powered ICT emphasizes ethical, practical,
+                        and human-centered technology...</p>
+                    <a class="read-more" href="article-ict.html">Read More</a>
+                </div>
+            </div>
+
+            <!-- Image card article -->
+            <div class="card-article">
+                <img src="computer-wordpress-html-front-end.jpg" alt="Programming">
+                <div class="card-article-content">
+                    <h2><a href="pge.html">Programming Experience</a></h2>
+                    <p class="snippet">In Year 9, I explored HTML and CSS to build front-end websites. This introduction
+                        to ICT showed me the creativity of coding and sparked curiosity for more advanced topics. Even
+                        basic skills gave confidence to continue learning and understanding how websites function...</p>
+                    <a class="read-more" href="pge.html">Read More</a>
+                </div>
+            </div>
+
+            <!-- Image card article -->
+            <div class="card-article">
+                <img src="extra4-web.jpg" alt="Vision">
+                <div class="card-article-content">
+                    <h2><a href="blog-future.html">My Vision After Completing the Program</a></h2>
+                    <p class="snippet">After completing the program, I aim to enter tech confidently as a software
+                        developer or computer engineer. My goal is to build systems that solve real-world problems while
+                        developing creativity, teamwork, and confidence. Learning and applying knowledge to make a
+                        meaningful impact remains my vision...</p>
+                    <a class="read-more" href="blog-future.html">Read More</a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- Image card article -->
-    <div class="card-article">
-        <img src="computer-wordpress-html-front-end.jpg" alt="Programming">
-        <div class="card-article-content">
-            <h2><a href="pge.html">Programming Experience</a></h2>
-            <p class="snippet">In Year 9, I explored HTML and CSS to build front-end websites. This introduction to ICT showed me the creativity of coding and sparked curiosity for more advanced topics. Even basic skills gave confidence to continue learning and understanding how websites function...</p>
-            <a class="read-more" href="pge.html">Read More</a>
-        </div>
-    </div>
-
-    <!-- Image card article -->
-    <div class="card-article">
-        <img src="extra4-web.jpg" alt="Vision">
-        <div class="card-article-content">
-            <h2><a href="blog-future.html">My Vision After Completing the Program</a></h2>
-            <p class="snippet">After completing the program, I aim to enter tech confidently as a software developer or computer engineer. My goal is to build systems that solve real-world problems while developing creativity, teamwork, and confidence. Learning and applying knowledge to make a meaningful impact remains my vision...</p>
-            <a class="read-more" href="blog-future.html">Read More</a>
-        </div>
-    </div>
-</div>
-</main>
+    </main>
 
 
 
 
 
- <footer>
+    <footer>
         <table width="100%">
             <tr valign="top">
                 <td width="25%">
@@ -140,9 +158,10 @@
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
                                 class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color:white; text-decoration:none;"></i></a>
-                        <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                                style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.x.com/henryjr210" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>

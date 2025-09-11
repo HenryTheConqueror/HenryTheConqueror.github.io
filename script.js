@@ -16,10 +16,10 @@ const media = window.matchMedia("(width < 800px)");
 
 const acc = document.querySelectorAll("p.accordion");
 
-    acc.forEach(item => {
-      item.addEventListener("click", function () {
+acc.forEach(item => {
+    item.addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
         panel.classList.toggle("show");
-      });
     });
+});

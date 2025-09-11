@@ -11,24 +11,25 @@
     <link href="contact.html">
     <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css"><!-- Font Awesome -->
     <link href="blog.html">
-    <link  href="dashboard.html">
+    <link href="dashboard.html">
     <script src="bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link  href="faq.html">
-    <link  href="profile.html">
+    <link href="faq.html">
+    <link href="profile.html">
     <script src="script.js" defer></script>
 
 </head>
 
 <body>
     <!-- Hamburger button to open sidebar -->
-<button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
+    <button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
 
 
-<!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav id="navbar">
         <ul>
-            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i class="fa-solid fa-xmark"></i></button></li>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i
+                        class="fa-solid fa-xmark"></i></button></li>
             <li class="home-li"><a class="active" href="index.html">Home</a></li>
             <li class="blog-li"><a href="blog.html">Blog</a></li>
             <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
@@ -36,88 +37,109 @@
 
             <li class="placeholder"><input type="text" placeholder="Search.."></li>
 
-            <li><div class="dropdown">Lang:EN🇬🇧
-            <div class="dropdown-content">EN🇬🇧</div>
-            <div class="dropdown-content"><a href="profilenl.html">NL🇳🇱</a></div>
-            </div></li>
+            <li>
+                <div class="dropdown">Lang:EN🇬🇧
+                    <div class="dropdown-content">EN🇬🇧</div>
+                    <div class="dropdown-content"><a href="profilenl.html">NL🇳🇱</a></div>
+                </div>
+            </li>
 
         </ul>
-</nav>
+    </nav>
 
-<div id="overlay" onclick="closeSidebar()"></div>
-<br>
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <br>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <ul class="sidebar-menu">
+            <li></li>
+            <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e" style="color: #ffffff;"><span>HZ
+                        HBO-ICT CER</span></a></li>
+            <li><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer"
+                    style="color: #ffffff;"><span>IR of the HBO-ICT program</span></a></li>
+            <li><a href="###" style="color: #ffffff;"><span>Learn Environment</span></a></li>
+            <li><a href="###" style="color: #ffffff;"><span>My Study Progress</span></a></li>
+            <li><a href="https://github.com/HZ-HBO-ICT" style="color: #ffffff;"><span>HBO-ICT GitHub Page</span></a>
+            </li>
+            <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf"
+                    style="color: #ffffff;"><span>Facilities Regulations</span></a></li>
+    </aside>
 
 
 
+    <main class="main">
 
-        <main class="main">
+        <div class="welcome">
+            <h1>Welcome To My Page</h1>
+            <div class="myself">
+                <fieldset>
+                    <legend>
+                        <h1>Personal Information</h1>
+                    </legend>
+                    <ul>
+                        <h2>
+                            <li>Name: Henry Oduenyi</li>
+                            <li>Age: 17</li>
+                            <li>Location: Poelendaelesingel 6-40 4335JA Middelburg</li>
+                            <li>Nationality: Dutch</li>
+                        </h2>
+                    </ul>
+                </fieldset>
+                <p></p>
+            </div>
 
-    <div class="welcome">
-        <h1>Welcome To My Page</h1>
-        <div class="myself">
-            <fieldset>
-                <legend>
-                    <h1>Personal Information</h1>
-                </legend>
-                <ul>
-                    <h2>
-                        <li>Name: Henry Oduenyi</li>
-                        <li>Age: 17</li>
-                        <li>Location: Poelendaelesingel 6-40 4335JA Middelburg</li>
-                        <li>Nationality: Dutch</li>
-                    </h2>
+            <!-- Profile Card -->
+            <div
+                style="max-width:800px; margin:50px auto; background-color:white; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1); padding:30px;">
+
+                <!-- Profile Image -->
+                <img src="Screen Shot 2025-05-02 at 10.43.18 AM Small.jpeg" alt="Henry's Photo"
+                    style="display:block; margin:0 auto 20px; width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #1a1a1a;">
+
+                <!-- Name -->
+                <h1 style="text-align:center; margin-bottom:20px;">Henry Oduenyi Jnr</h1>
+
+                <!-- Description Paragraphs -->
+                <p style="line-height:1.6; margin-bottom:15px; color:#333;">
+                    I am a passionate learner and aspiring software developer with a strong interest in front-end and
+                    back-end technologies. I enjoy solving real-world problems with code and continuously improving my
+                    skills in programming and technology.
+                </p>
+
+                <p style="line-height:1.6; margin-bottom:15px; color:#333;">
+                    Beyond coding, I love exploring creative solutions, learning new frameworks, and collaborating with
+                    others on exciting projects. I believe in growth through both challenges and curiosity.
+                </p>
+
+                <!-- Hobbies / Interests -->
+                <h3>Hobbies & Interests</h3>
+                <ul style="list-style:none; padding:0;">
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-code" style="color:#f39c12;"></i> Coding & Problem Solving
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-football" style="color:#f39c12;"></i> Football
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-music" style="color:#f39c12;"></i> Music Production & Listening
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-book" style="color:#f39c12;"></i> Reading Tech Blogs & Books
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-plane" style="color:#f39c12;"></i> Traveling & Exploring
+                    </li>
                 </ul>
-            </fieldset>
-            <p></p>
-        </div>
 
-             <!-- Profile Card -->
-    <div style="max-width:800px; margin:50px auto; background-color:white; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1); padding:30px;">
+                <!-- Contact Button -->
+                <a href="contact.html"
+                    style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#1a1a1a; color:white; text-decoration:none; border-radius:8px; transition:0.3s;">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </a>
 
-        <!-- Profile Image -->
-        <img src="Screen Shot 2025-05-02 at 10.43.18 AM Small.jpeg" alt="Henry's Photo"
-            style="display:block; margin:0 auto 20px; width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #1a1a1a;">
-
-        <!-- Name -->
-        <h1 style="text-align:center; margin-bottom:20px;">Henry Oduenyi Jnr</h1>
-
-        <!-- Description Paragraphs -->
-        <p style="line-height:1.6; margin-bottom:15px; color:#333;">
-            I am a passionate learner and aspiring software developer with a strong interest in front-end and back-end technologies. I enjoy solving real-world problems with code and continuously improving my skills in programming and technology.
-        </p>
-
-        <p style="line-height:1.6; margin-bottom:15px; color:#333;">
-            Beyond coding, I love exploring creative solutions, learning new frameworks, and collaborating with others on exciting projects. I believe in growth through both challenges and curiosity.
-        </p>
-
-        <!-- Hobbies / Interests -->
-        <h3>Hobbies & Interests</h3>
-        <ul style="list-style:none; padding:0;">
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
-                <i class="fa-solid fa-code" style="color:#f39c12;"></i> Coding & Problem Solving
-            </li>
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
-                <i class="fa-solid fa-football" style="color:#f39c12;"></i> Football
-            </li>
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
-                <i class="fa-solid fa-music" style="color:#f39c12;"></i> Music Production & Listening
-            </li>
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
-                <i class="fa-solid fa-book" style="color:#f39c12;"></i> Reading Tech Blogs & Books
-            </li>
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
-                <i class="fa-solid fa-plane" style="color:#f39c12;"></i> Traveling & Exploring
-            </li>
-        </ul>
-
-        <!-- Contact Button -->
-        <a href="contact.html"
-            style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#1a1a1a; color:white; text-decoration:none; border-radius:8px; transition:0.3s;">
-            <i class="fa-solid fa-envelope"></i> Contact Me
-        </a>
-
-    </div>
-        </main>
+            </div>
+    </main>
     </div>
 
     <footer>
@@ -133,9 +155,10 @@
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
                                 class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color:white; text-decoration:none;"></i></a>
-                        <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                                style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.x.com/henryjr210" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
