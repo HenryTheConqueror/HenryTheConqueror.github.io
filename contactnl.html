@@ -5,62 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Henry Jnr's Profiel</title>
+    <title>Henry Jnr's Contact</title>
     <link rel="stylesheet" href="style.css">
+    <link href="c.html">
+    <link href="contactnl.html">
     <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css">
-    <link rel="stylesheet" href="indexnl.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="bootstrap.min.css">
-
+    <link href="blog.html">
+    <link href="dashboard.html">
+    <link href="faq.html">
+    <link href="profile.html">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="blog.html">Blog</a>
 
-        <div class="dropdown">Taal:NL🇳🇱
-  <div class="dropdown-content">NL🇳🇱</div>
-  <div class="dropdown-content"><a href="profile.html">EN🇬🇧</a></div>
-</div>
+    <!-- Hamburger button to open sidebar -->
+    <button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
 
-        <input type="text" placeholder="Zoeken..">
-    </div>
-    <div class="contact">
-        <fieldset>
-            <legend>
-                <h1>Contacteer mij</h1>
-            </legend>
-            <h2>Email: odue0001@hz.nl</h2>
-            <h2>Telefoonnummer: +31 6 98765432</h2>
-            <h2><i class="fa-brands fa-instagram"></i>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i
+                        class="fa-solid fa-xmark"></i></button></li>
+            <li class="home-li"><a class="active" href="index.html">Home</a></li>
+            <li class="blog-li"><a href="blog.html">Blog</a></li>
+            <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
+            <li class="faq-li"><a href="faq.html">FAQ</a></li>
+
+            <li class="placeholder"><input type="text" placeholder="Zoeken.."></li>
+
+            <li>
+                <div class="dropdown">Taal:EN🇬🇧
+                    <div class="dropdown-content">EN🇬🇧</div>
+                    <div class="dropdown-content"><a href="contactnl.html">NL🇳🇱</a></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <br>
+
+    <main>
+        <div class="contact-card">
+            <h2>Neem Contact Op</h2>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+31 6 12345678</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+234 803 123 4567</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-instagram"></i>
                 <a href="https://www.instagram.com/henryjr.210" target="_blank">@henryjr.210</a>
-            </h2>
-            <h2><i class="fa-brands fa-x-twitter"></i>
-                <a href="https://www.x.com/henryjr.210" target="_blank">@henryjr210</a>
-            </h2>
-        </fieldset>
-        <p style="color: white;">Als je contact met mij wilt opnemen, voel je vrij om een bericht te sturen!😉</p>
-    </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-x-twitter"></i>
+                <a href="https://www.twitter.com/henryjr210" target="_blank">@henryjr210</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/HenryTheConqueror" target="_blank">github.com/HenryTheConqueror</a>
+            </div>
+
+            <div class="contact-item">
+                <p style="color: white;">Als je contact met mij wilt opnemen, aarzel dan niet om een bericht te sturen!😉</p>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <table width="100%">
             <tr valign="top">
                 <td width="25%">
                     <a href="https://hz.nl/en">
-                        <h2><img src="images/hz-logo.svg" alt="HZ Logo"></h2>
+                        <h4><img src="images/hz-logo.svg" alt="HZ Logo"></h4>
                 </td>
 
                 <td width="25%">
                     <h4>VERBIND MET MIJ</h4>
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                                class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                                style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.x.com/henryjr210" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
@@ -69,23 +106,21 @@
                 <td width="25%">
                     <h4>HENRY</h4>
                     <p>
-                        Ik heb<br>
-                        Een beetje<br>
+                        HTML<br>
+                        CSS<br>
                         Bootstrap<br>
-                        Gebruikt<br>
-                        Om<br>
-                        De<br>
-                        Footer<br>
-                        Te maken<br>
+                        JavaScript<br>
+                        Font Awesome<br>
+                        W3 Schools<br>
+                        Free Code Camp<br>
                         Mijn Account
                     </p>
                 </td>
 
-
                 <td width="25%">
                     <h4>LEER</h4>
                     <p>
-                        Over mij<br>
+                        Over Mij<br>
                         Locaties<br>
                         Contact<br>
                         Blog<br>

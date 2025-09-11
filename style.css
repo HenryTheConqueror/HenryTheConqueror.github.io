@@ -319,7 +319,7 @@ aside {
   grid-area: aside;
   position: sticky;
   left: 0;
-  top: 85px;
+  top: 86px;
   grid-area: aside;
   height: 100%;
   z-index: 998;

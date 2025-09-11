@@ -5,53 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Henry Jnr's Profiel</title>
+    <title>Henry Jnr's FAQ</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="contact.html">
+    <link href="blognl.html">
+    <link href="contact.html">
     <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css">
-
+    <link href="blog.html">
+    <link href="dashboard.html">
+    <link href="faq.html">
+    <link href="profile.html">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="indexnl.html">Home</a>
-        <a href="contactnl.html">Contact</a>
-        <a href="profilenl.html">Profiel</a>
-        <a href="blognl.html">Blog</a>
-        <a href="dashboardnl.html">Dashboard</a>
-        <a href="faqnl.html">FAQ</a>
+    <!-- Hamburger button to open sidebar -->
+    <button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
 
-        <div class="dropdown">Taal:NL🇳🇱
-  <div class="dropdown-content">NL🇳🇱</div>
-  <div class="dropdown-content"><a href="profile.html">EN🇬🇧</a></div>
-</div>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i
+                        class="fa-solid fa-xmark"></i></button></li>
+            <li class="home-li"><a class="active" href="index.html">Home</a></li>
+            <li class="blog-li"><a href="blog.html">Blog</a></li>
+            <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
+            <li class="faq-li"><a href="faq.html">FAQ</a></li>
 
-        <input type="text" placeholder="Zoeken..">
-    </div>
-    
-    
+            <li class="placeholder"><input type="text" placeholder="Zoeken.."></li>
 
-<!-- SCHRIJF HIER -->
+            <li>
+                <div class="dropdown">Taal:EN🇬🇧
+                    <div class="dropdown-content">EN🇬🇧</div>
+                    <div class="dropdown-content"><a href="faqnl.html">NL🇳🇱</a></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <br>
 
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <ul class="sidebar-menu">
+            <li></li>
+            <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e"><span>HZ HBO-ICT CER</span></a></li>
+            <li><a
+                    href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer"><span>IR van het HBO-ICT programma</span></a></li>
+            <li><a href="###"><span>Leeromgeving</span></a></li>
+            <li><a href="###"><span>Mijn Studievoortgang</span></a></li>
+            <li><a href="https://github.com/HZ-HBO-ICT"><span>HBO-ICT GitHub Pagina</span></a></li>
+            <li><a
+                    href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf"><span>Faciliteiten Reglement</span></a></li>
+        </ul>
+    </aside>
+
+    <!-- FAQ content -->
+    <main>
+        <h1>FAQ</h1>
+
+        <p class="accordion">1. Documenten Afdrukken vanaf je Laptop bij HZ</p>
+        <div class="panel">
+            <p>Om documenten vanaf je laptop bij HZ af te drukken, moet je een HZ faciliteitskaart verkrijgen. Deze kaart geeft toegang tot printers, koffie-/theeautomaten en parkeerplaatsen. Om de kaart te verkrijgen, moet je een foto van jezelf uploaden. Gedetailleerde instructies staan in het document 'Introductie Medewerkers'.</p>
+        </div>
+
+        <p class="accordion">2. Documenten Scannen en naar je Laptop Verzenden</p>
+        <div class="panel">
+            <p>Specifieke instructies voor het scannen van documenten worden niet gedetailleerd, maar HZ biedt ongeveer 400 computers voor studenten aan diverse locaties, waaronder de bibliotheek, klaslokalen en cursusgerelateerde ruimtes zoals laboratoria en simulatiekamers. Deze faciliteiten ondersteunen studenten bij hun werkzaamheden.</p>
+        </div>
+
+        <p class="accordion">3. Artikelen Kopen via de HZ Webshop</p>
+        <div class="panel">
+            <p>Tickets voor het programma van HZ Cult zijn te koop via hun webshop op <a href="http://www.hzcult.nl">www.hzcult.nl</a>. Dit platform wordt gebruikt voor diverse evenementen en activiteiten georganiseerd door HZ.</p>
+        </div>
+
+        <p class="accordion">4. Registreren voor Cursussen en Tentamens bij HZ</p>
+        <div class="panel">
+            <p>Studenten moeten zich registreren voor cursussen via OSIRIS Student. Registratie voor cursussen wordt meestal door het programma geregeld voor de eerste twee toetsmomenten in het eerste jaar. Voor volgende cursussen zijn studenten zelf verantwoordelijk voor registratie. Registreer vóór de deadline, meestal één week voor de start van de cursus.</p>
+        </div>
+
+        <p class="accordion">5. Parkeren bij HZ</p>
+        <div class="panel">
+            <p><strong>Middelburg (Het Groene Woud):</strong> Parkeren direct bij HZ is niet mogelijk. Er is één speciale parkeerplaats voor mensen met een handicap of chronische aandoening. De parkeerplaats bij Kousteensedijk heeft plekken voor bezoekers, medewerkers en studenten. Met je toegangspas kun je een uitrijkaart krijgen bij de JRCZ balie.</p>
+            <p><strong>Vlissingen (Edisonweg):</strong> Rond de campus zijn parkeerplaatsen beschikbaar. Is het vol, dan kun je ook parkeren bij Orionis of Scalda. Het NS-station is 10 minuten lopen.</p>
+        </div>
+
+        <p class="accordion">6. HZ Instellingsplan 2022-2027</p>
+        <div class="panel">
+            <p>Het HZ Instellingsplan 2022-2027 beschrijft de missie, visie, ambities en kernwaarden van de universiteit. Het benadrukt de inzet om bij te dragen aan een betere wereld door onderwijs en onderzoek. Het plan is tot stand gekomen in nauwe samenwerking met interne en externe belanghebbenden.</p>
+        </div>
+
+        <p class="accordion">7. Missie en Visie bij HZ</p>
+        <div class="panel">
+            <p>De missie en visie van HZ zijn vastgelegd in het Instellingsplan 2022-2027. De universiteit streeft ernaar een gewaardeerde instelling te zijn op het gebied van water, energie en vitaliteit, en een partner te zijn voor maatschappelijke doelen in de regio. Deze ambities sturen het onderwijs en onderzoek van HZ.</p>
+        </div>
+
+        <p class="accordion">8. Acceptabel Gebruik van ICT-middelen</p>
+        <div class="panel">
+            <p>HZ heeft Acceptable Use Policies opgesteld voor studenten en medewerkers om verantwoord en veilig gebruik van ICT-middelen te waarborgen. Deze regels behandelen systeem- en netwerkbeveiliging, misbruikpreventie, bescherming van persoonlijke gegevens en richtlijnen voor sociale media. Ze streven naar een balans tussen effectief ICT-gebruik en privacyrechten.</p>
+        </div>
+
+        <p class="accordion">9. Focus van het ICT Programma bij HZ</p>
+        <div class="panel">
+            <p>Het ICT-programma bij HZ richt zich op het oplossen van problemen en verbeteren van processen met ICT. Het benadrukt analytische en probleemoplossende vaardigheden, met een sterke basis in programmeren. Het programma bevat praktijkcases en behandelt onderwerpen zoals data science, software engineering en IT-consultancy, waardoor studenten voorbereid worden op professionele ICT-rollen.</p>
+        </div>
+
+        <p class="accordion">10. Toelatingseisen voor het ICT Programma</p>
+        <div class="panel">
+            <p>Voor het ICT-programma bij HZ zijn geen extra toelatingseisen buiten de algemene criteria. Aanvragers moeten Engelse taalvaardigheid aantonen, gelijkwaardig aan een IELTS-score van 6.0. Specifieke vakvereisten kunnen verschillen; controleer de gedetailleerde toelatingscriteria voor de meest accurate informatie.</p>
+        </div>
+
+    </main>
 
     <footer>
         <table width="100%">
             <tr valign="top">
                 <td width="25%">
                     <a href="https://hz.nl/en">
-                        <h2><img src="images/hz-logo.svg" alt="HZ Logo"></h2>
+                        <h4><img src="images/hz-logo.svg" alt="HZ Logo"></h4>
                 </td>
 
                 <td width="25%">
                     <h4>VERBIND MET MIJ</h4>
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                                class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                                style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.x.com/henryjr210" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
@@ -60,14 +142,13 @@
                 <td width="25%">
                     <h4>HENRY</h4>
                     <p>
-                        Ik heb<br>
-                        Een beetje<br>
+                        HTML<br>
+                        CSS<br>
                         Bootstrap<br>
-                        Gebruikt<br>
-                        Om<br>
-                        De<br>
-                        Footer<br>
-                        Te maken<br>
+                        JavaScript<br>
+                        Font Awesome<br>
+                        W3 Schools<br>
+                        Free Code Camp<br>
                         Mijn Account
                     </p>
                 </td>
@@ -75,7 +156,7 @@
                 <td width="25%">
                     <h4>LEER</h4>
                     <p>
-                        Over mij<br>
+                        Over Mij<br>
                         Locaties<br>
                         Contact<br>
                         Blog<br>

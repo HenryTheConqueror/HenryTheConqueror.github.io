@@ -5,94 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profiel van Henry Jnr</title>
+    <title>Henry Jnr's Profiel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="all.min.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="indexnl.html">
+    <link href="contact.html">
+    <link rel="stylesheet" href="fontawesome-free-7.0.1-web/css/all.min.css"><!-- Font Awesome -->
+    <link href="blog.html">
+    <link href="dashboard.html">
+    <script src="bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link href="faq.html">
+    <link href="profile.html">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="blog.html">Blog</a>
+    <!-- Hamburger button to open sidebar -->
+    <button id="open-sidebar" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></button>
 
-        <div class="dropdown">Taal:NL🇳🇱
-  <div class="dropdown-content">NL🇳🇱</div>
-  <div class="dropdown-content"><a href="profile.html">EN🇬🇧</a></div>
-</div>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar" onclick="closeSidebar()" style="color: white;"><i
+                        class="fa-solid fa-xmark"></i></button></li>
+            <li class="home-li"><a class="active" href="index.html">Home</a></li>
+            <li class="blog-li"><a href="blog.html">Blog</a></li>
+            <li class="dashboard-li"><a href="dashboard.html">Dashboard</a></li>
+            <li class="faq-li"><a href="faq.html">FAQ</a></li>
 
-        <input type="text" placeholder="Zoeken..">
-    </div>
-    <div class="myself">
-        <fieldset>
-            <legend>
-                <h1>Persoonlijke informatie</h1>
-            </legend>
-            <ul>
-                <h2>
-                    <li>Naam: Henry Jnr</li>
-                    <li>Leeftijd: 17</li>
-                    <li>Locatie: Poelendaelesingel 6-40 4335JA Middelburg</li>
-                    <li>Nationaliteit: Nederlands</li>
-                </h2>
-            </ul>
-        </fieldset>
-        <p></p>
-    </div>
+            <li class="placeholder"><input type="text" placeholder="Zoeken.."></li>
+
+            <li>
+                <div class="dropdown">Taal:EN🇬🇧
+                    <div class="dropdown-content">EN🇬🇧</div>
+                    <div class="dropdown-content"><a href="profilenl.html">NL🇳🇱</a></div>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <br>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <ul class="sidebar-menu">
+            <li></li>
+            <li><a href="https://oer.hz.nl/a4c8a5ba-192a-4c71-81ad-fd30fe4c799e" style="color: #ffffff;"><span>HZ
+                        HBO-ICT CER</span></a></li>
+            <li><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#chapter-2-implementation-regulation-hz-cer"
+                    style="color: #ffffff;"><span>IR van het HBO-ICT programma</span></a></li>
+            <li><a href="###" style="color: #ffffff;"><span>Leeromgeving</span></a></li>
+            <li><a href="###" style="color: #ffffff;"><span>Mijn Studievoortgang</span></a></li>
+            <li><a href="https://github.com/HZ-HBO-ICT" style="color: #ffffff;"><span>HBO-ICT GitHub Pagina</span></a>
+            </li>
+            <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/7.-Other-regulations/Participation/Facility-Regulations-for-Programme-Committees.pdf"
+                    style="color: #ffffff;"><span>Faciliteiten Reglement</span></a></li>
+    </aside>
+
     <main class="main">
-        <h1 class="swot">SZKB-analyse</h1>
 
-        <h2><i class="fa-solid fa-arrow-up"></i>Sterktes</h2>
-        <ul>
-            <li>Nieuwsgierig en leergierig</li>
-            <li>Sterke interesse in technologie → ambitieus en veelzijdig</li>
-            <li>Multiculturele achtergrond → aanpasbaar in diverse omgevingen</li>
-            <li>Vastbesloten om academische studie en persoonlijke passies te combineren</li>
-        </ul>
+        <div class="welcome">
+            <div class="myself">
+                <fieldset>
+                    <legend>
+                        <h1>Persoonlijke Informatie</h1>
+                    </legend>
+                    <ul>
+                        <h2>
+                            <li>Naam: Henry Oduenyi</li>
+                            <li>Leeftijd: 17</li>
+                            <li>Locatie: Poelendaelesingel 6-40 4335JA Middelburg</li>
+                            <li>Nationaliteit: Nederlands</li>
+                        </h2>
+                    </ul>
+                </fieldset>
+                <p></p>
+            </div>
 
-        <h2><i class="fa-solid fa-arrow-down"></i>Zwaktes</h2>
-        <ul>
-            <li>Beperkte formele ervaring in informatica en professioneel voetbal</li>
-            <li>Kan overweldigd raken door het willen beheersen van te veel tegelijk</li>
-            <li>Soms ongeduldig bij trage voortgang</li>
-            <li>Relatief nieuw in het navigeren van studentensystemen</li>
-        </ul>
+            <!-- Profile Card -->
+            <div
+                style="max-width:800px; margin:50px auto; background-color:white; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1); padding:30px;">
 
-        <h2><i class="fa-solid fa-clover"></i></i>Kansen</h2>
-        <ul>
-            <li>Studeren in Nederland biedt toegang tot wereldklasse onderwijs</li>
-            <li>Groeiende vraag naar AI, software engineers en data scientists</li>
-            <li>Netwerken met internationale studenten en mentoren</li>
-        </ul>
+                <!-- Profile Image -->
+                <img src="Screen Shot 2025-05-02 at 10.43.18 AM Small.jpeg" alt="Foto van Henry"
+                    style="display:block; margin:0 auto 20px; width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #1a1a1a;">
 
-        <h2><i class="fa-solid fa-triangle-exclamation"></i>Bedreigingen</h2>
-        <ul>
-            <li>Hoge concurrentie in technologievelden</li>
-            <li>Snel veranderende tech-industrie</li>
-        </ul>
+                <!-- Name -->
+                <h1 style="text-align:center; margin-bottom:20px;">Henry Oduenyi Jnr</h1>
+
+                <!-- Description Paragraphs -->
+                <p style="line-height:1.6; margin-bottom:15px; color:#333;">
+                    Ik ben een gepassioneerde leerling en aspirant softwareontwikkelaar met grote interesse in front-end en
+                    back-end technologieën. Ik los graag echte problemen op met code en verbeter continu mijn vaardigheden
+                    in programmeren en technologie.
+                </p>
+
+                <p style="line-height:1.6; margin-bottom:15px; color:#333;">
+                    Buiten het coderen vind ik het leuk om creatieve oplossingen te ontdekken, nieuwe frameworks te leren en
+                    samen te werken aan spannende projecten. Ik geloof in groei door zowel uitdagingen als nieuwsgierigheid.
+                </p>
+
+                <!-- Hobbies / Interests -->
+                <h3>Hobby's & Interesses</h3>
+                <ul style="list-style:none; padding:0;">
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-code" style="color:#f39c12;"></i> Coderen & Probleemoplossing
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-football" style="color:#f39c12;"></i> Voetbal
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-music" style="color:#f39c12;"></i> Muziekproductie & Luisteren
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-book" style="color:#f39c12;"></i> Tech Blogs & Boeken Lezen
+                    </li>
+                    <li style="padding:8px 0; display:flex; align-items:center; gap:10px; font-size:16px; color:#555;">
+                        <i class="fa-solid fa-plane" style="color:#f39c12;"></i> Reizen & Ontdekken
+                    </li>
+                </ul>
+
+                <!-- Contact Button -->
+                <a href="contact.html"
+                    style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#1a1a1a; color:white; text-decoration:none; border-radius:8px; transition:0.3s;">
+                    <i class="fa-solid fa-envelope"></i> Neem Contact Op
+                </a>
+
+            </div>
     </main>
+    </div>
 
     <footer>
         <table width="100%">
             <tr valign="top">
                 <td width="25%">
                     <a href="https://hz.nl/en">
-                        <h2><img src="images/hz-logo.svg" alt="HZ Logo"></h2>
+                        <h4><img src="images/hz-logo.svg" alt="HZ Logo"></h4>
                 </td>
 
                 <td width="25%">
                     <h4>VERBIND MET MIJ</h4>
                     <p>
                         <a href="https://www.instagram.com/henryjr.210" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.x.com/henryjr210" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                                class="fa-brands fa-instagram" style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                                style="color:white; text-decoration:none;"></i></a>
+                        <a href="https://www.x.com/henryjr210" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color:white; text-decoration:none;"></i></a>
                         <a href="tel:+3103123456787" style="color:white; text-decoration:none;"><i
                                 class="fa-solid fa-phone"></i></a>
                     </p>
@@ -101,28 +162,29 @@
                 <td width="25%">
                     <h4>HENRY</h4>
                     <p>
-                        Ik heb een beetje<br>
-                        Bootstrap gebruikt<br>
-                        Om de<br>
-                        Footer<br>
-                        Klassen<br>
-                        Te maken<br>
-                        Mijn account
+                        HTML<br>
+                        CSS<br>
+                        Bootstrap<br>
+                        JavaScript<br>
+                        Font Awesome<br>
+                        W3 Schools<br>
+                        Free Code Camp<br>
+                        Mijn Account
                     </p>
                 </td>
 
 
                 <td width="25%">
-                    <h4>LEREN</h4>
+                    <h4>LEER</h4>
                     <p>
-                        Over mij<br>
+                        Over Mij<br>
                         Locaties<br>
                         Contact<br>
                         Blog<br>
                         FAQ<br>
                         Privacybeleid<br>
                         Toegankelijkheid<br>
-                        Download mijn app
+                        Download Mijn App
                     </p>
                 </td>
             </tr>
@@ -131,17 +193,11 @@
         <hr style="border:0; border-top:1px solid white; margin:20px 0;">
 
         <p style="text-align:center; margin:0;">
-            Auteursrecht © 2025 <br>
+            Copyright © 2025 <br>
             Gemaakt door Henry
         </p>
     </footer>
 
-</body>
-
-</html>
-
-<body>
-    <h1></h1>
 </body>
 
 </html>
